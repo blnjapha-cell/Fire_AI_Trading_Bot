@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // All reads/writes are blocked from client SDKs.
+    // Only the server-side Python bot (via service account) can access data.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
