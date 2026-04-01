@@ -1,0 +1,22 @@
+# --- SENSITIVE CREDENTIALS (CRITICAL) ---
+# Ignore files where you store API keys, passwords, and account numbers
+.env
+config.json
+credentials.py
+secret.py
+
+# --- PYTHON JUNK ---
+# Ignore compiled python files and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+ENV/
+
+# --- TRADING / METATRADER JUNK ---
+# If you are testing locally, ignore large log files or history data
+*.log
+*.csv
